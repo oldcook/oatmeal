@@ -310,3 +310,8 @@ In practice, for this code to actually be fully robust, you'd also need to check
 
 Be careful when you are dealing with unsigned integers! In general, you should only use unsigned integers when you absolutely need to, such as if you are trying to maximize the range of positive values you can store in the same amount of memory. For everyday high-level programming purposes, signed integers may be all you need. If you need to ensure positive values during your code execution, you can write safety checks into the code to monitor values and issue warnings or errors if a certain range is exceeded.
 
+# Constructor
+
+The professor is using the Clang compiler ("clang++" to be specific). Some sessions of this course sequence tell you to install GCC instead (the GNU Compiler Collection, launched by "g++"). These compilers are similar but the error messages and warnings they display are not exactly the same. We'll try to help you set up whichever one is more compatible with our current online course infrastructure! For the sake of the course, you can rely on the provided Makefiles and the "make" command, but it's good to learn about these details over time.
+
+The error messages mention a "copy constructor" and "move constructor". You will learn about copy constructors in the following videos, but in this course sequence, we won't discuss the "move constructor". That is a memory efficiency feature that was added to C++ in recent years, and although it is useful for achieving high performance, it is complex to understand. Perhaps we will discuss it in an advanced course sequence later on.
